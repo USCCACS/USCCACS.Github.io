@@ -2,22 +2,29 @@ require 'nokogiri'
 
 # input file which contains the data for the publication
 DATA_FILENAME = "publication_details.xml"
-OUTPUT_FILENAME = "index.html"
+OUTPUT_FILENAME = "test_page.html"
 
-def find_publication_file(filename)
-  if (File.exist?(data_filename))
-    puts "xml file exists. we will now begin processing for valid contents"
+def find_data_file(data_files)
+  unless (data_files.map { |f| File.exist?(f) }.include? false)
+    puts "files exists. we will now begin processing for valid contents"
   else
-    abort "#{filename} does not exit in the directory. This action fails" 
+    abort "Both files #{data_files} must be present in the root directory. 
+    This action fails" 
   end
 end
 
-def find_valid_entries(filename)
-  puts "checking for valid entries"
-  xml_doc = File.open("blossom.xml") { |f| Nokogiri::XML(f) }
+def read_data_and_prepend(data_filename, output_filename)
+  # pre-check for existing input and output files
+  find_data_file([data_filename, output_filename])
   
+  puts "checking for valid entries"
+  xml_doc = File.open("publication_details.xml") { |f| Nokogiri::XML(f) }
+  sitcom1 = xml_doc.css('sitcom')
+  puts "this is the first sitcom"+sitcom1[0].to_xml
+  sitcoms = xml_doc.css('sitcoms')
+  sitcom1.each {|b| puts b.to_xml } 
+  # puts xml_doc.to_XML
 end
 
-find_publication_file(DATA_FILE_NAME)
-find_valid_entries(FILE_NAME)
+read_data_and_prepend(DATA_FILENAME, OUTPUT_FILENAME)
   
