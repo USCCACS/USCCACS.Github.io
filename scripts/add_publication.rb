@@ -43,7 +43,7 @@ def prepend_to_html(publication, output_filename)
   date = all_dates.select {|d| d.content==publication.at_css('year').content }.first
   # p date
   date_value = date.add_next_sibling "<li>my head</li>"
-  puts @html_doc
+  # puts @html_doc
   # @required_fields.each do |field|
 #     puts publication.at_css(field).content
 #
