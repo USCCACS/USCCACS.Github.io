@@ -1,11 +1,18 @@
 <root>
 	<publications>
 		<publication>
-			<title></title>
-			<author></author>
-			<rating></rating>
-			<volume></volume>
-			<year></year>			
+			<title>Henry</title>
+			<author>Ford</author>
+			<rating>8</rating>
+			<volume>4</volume>
+			<year>1960</year>			
+		</publication>
+		<publication>
+			<title>scooter</title>
+			<author>Bajaj</author>
+			<rating>8</rating>
+			<volume>4</volume>
+			<year>1960</year>			
 		</publication>
 	</publications>
 </root>

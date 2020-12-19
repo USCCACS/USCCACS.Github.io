@@ -6,23 +6,51 @@ OUTPUT_FILENAME = "test_page.html"
 
 def find_data_file(data_files)
   unless (data_files.map { |f| File.exist?(f) }.include? false)
-    puts "files exists. we will now begin processing for valid contents"
+    puts "Files exist. We will now begin processing for valid contents."
   else
     abort "Both files #{data_files} must be present in the root directory. 
     This action fails" 
   end
 end
 
+def identify_valid_nodes(publications)
+  valid_nodes = []
+  
+  publications.each do |publication|
+    empty_child = []
+    
+    empty_child << publication.at_css('title').content.empty?
+    empty_child << publication.at_css('author').content.empty?
+    empty_child << publication.at_css('rating').content.empty?
+    empty_child << publication.at_css('volume').content.empty?
+    empty_child << publication.at_css('year').content.empty?
+    
+    unless empty_child.include?(true)
+      valid_nodes << true
+    else 
+      valid_nodes << false
+    end  
+  end
+  
+  valid_nodes
+end
+
 def read_data_and_prepend(data_filename, output_filename)
   # pre-check for existing input and output files
   find_data_file([data_filename, output_filename])
   
-  puts "checking for valid entries"
-  xml_doc = File.open("publication_details.xml") { |f| Nokogiri::XML(f) }
-  sitcom1 = xml_doc.css('sitcom')
-  puts "this is the first sitcom"+sitcom1[0].to_xml
-  sitcoms = xml_doc.css('sitcoms')
-  sitcom1.each {|b| puts b.to_xml } 
+  puts "Checking for valid entries"
+  xml_doc = File.open(data_filename) { |f| Nokogiri::XML(f) }
+  
+  # check if any all valid publication details are provided
+  publications = xml_doc.css('publications publication')
+  valid_nodes = identify_valid_nodes(publications)
+  p valid_nodes
+  # puts publications
+  # sitcom1 = xml_doc.css('sitcom')
+  # puts "this is the first sitcom"+sitcom1[0].to_xml
+  # sitcoms = xml_doc.css('sitcoms')
+  # sitcom1.each {|b| puts b.to_xml }
   # puts xml_doc.to_XML
 end
 
