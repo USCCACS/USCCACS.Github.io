@@ -3,6 +3,7 @@ require 'nokogiri'
 # input file which contains the data for the publication
 DATA_FILENAME = "publication_details.xml"
 OUTPUT_FILENAME = "test_page.html"
+@required_fields = ['title', 'author', 'rating', 'volume', 'year']
 
 def find_data_file(data_files)
   unless (data_files.map { |f| File.exist?(f) }.include? false)
@@ -19,17 +20,20 @@ def identify_valid_nodes(publications)
   publications.each do |publication|
     empty_child = []
     
-    empty_child << publication.at_css('title').content.empty?
-    empty_child << publication.at_css('author').content.empty?
-    empty_child << publication.at_css('rating').content.empty?
-    empty_child << publication.at_css('volume').content.empty?
-    empty_child << publication.at_css('year').content.empty?
+    @required_fields.each do |field|
+      empty_child << publication.at_css(field).content.empty?
+    end
     
     unless empty_child.include?(true)
       valid_nodes << true
     else 
       valid_nodes << false
     end  
+    
+    # warn the user in the case of im-complete fill-up of details
+    if (empty_child.include?(true) and empty_child.include?(true))
+      abort ("Some fields were found to incomplete")
+    end
   end
   
   valid_nodes
