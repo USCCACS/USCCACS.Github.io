@@ -40,9 +40,12 @@ end
 def prepend_to_html(publication, output_filename)
   all_dates = @html_doc.css('div ol h2')
   # puts all_dates
-  date = all_dates.select {|d| d.content==publication.at_css('year').content }.first
+  date = all_dates.select {|d| d.content==publication.at_css('year').content }
+  if !(date.empty?) then puts "year exists" 
+  else puts "year must be added"
+  end
   # p date
-  date_value = date.add_next_sibling "<li>my head</li>"
+  # date_value = date.add_next_sibling "<li>my head</li>"
   # puts @html_doc
   # @required_fields.each do |field|
 #     puts publication.at_css(field).content
@@ -70,7 +73,7 @@ def read_data_and_prepend(data_filename, output_filename)
     if (valid) then prepend_to_html(pub, output_filename) end
   }
   
-  @xml_doc.write_to(output_filename)
+  # @xml_doc.write_to(output_filename)
 end
 
 read_data_and_prepend(DATA_FILENAME, OUTPUT_FILENAME)
