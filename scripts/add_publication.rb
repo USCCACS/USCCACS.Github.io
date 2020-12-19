@@ -2,7 +2,7 @@ require 'nokogiri'
 
 DATA_FILENAME = "publication_details.xml"
 OUTPUT_FILENAME = "test_page.html"
-@required_fields = ['title', 'author', 'rating', 'volume', 'year']
+@required_fields = ['title', 'author', 'rating', 'volume', 'year', 'link']
 
 def ensure_data_files(data_files)
   unless (data_files.map { |f| File.exist?(f) }.include? false)
