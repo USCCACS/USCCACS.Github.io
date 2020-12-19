@@ -2,7 +2,7 @@ require 'nokogiri'
 
 DATA_FILENAME = "publication_details.xml"
 OUTPUT_FILENAME = "test_page.html"
-@required_fields = ['title', 'author', 'rating', 'volume', 'year', 'link']
+@required_fields = ['title', 'author', 'publisher', 'rating', 'volume', 'year', 'link']
 
 def ensure_data_files(data_files)
   unless (data_files.map { |f| File.exist?(f) }.include? false)
@@ -38,14 +38,31 @@ def identify_valid_nodes(publications)
 end
 
 def prepend_to_html(publication, output_filename)
+  
+  entry_builder = Nokogiri::HTML::Builder.new do |html|
+    html.li {
+      html.a(:href => publication.at_css(@required_fields[6]).content) {
+        html.text publication.at_css(@required_fields[0]).content }
+      html.br 
+      html.text publication.at_css(@required_fields[1]).content
+      html.br
+      html.i publication.at_css(@required_fields[2]).content
+      html.b publication.at_css(@required_fields[3]).content
+      html.b ","+publication.at_css(@required_fields[4]).content
+      html.text "("+publication.at_css(@required_fields[5]).content+")"
+    }
+  end
+  
   all_dates = @html_doc.css('div ol h2')
   # puts all_dates
   date = all_dates.select {|d| d.content==publication.at_css('year').content }
   if !(date.empty?) then puts "year exists" 
-  else puts "year must be added"
+  else 
+    puts "year must be added"
+    
   end
   # p date
-  # date_value = date.add_next_sibling "<li>my head</li>"
+  date_value = date.first.add_next_sibling entry_builder.to_html
   # puts @html_doc
   # @required_fields.each do |field|
 #     puts publication.at_css(field).content
@@ -72,7 +89,7 @@ def read_data_and_prepend(data_filename, output_filename)
   publications.zip(valid_nodes).each_entry { |pub, valid| 
     if (valid) then prepend_to_html(pub, output_filename) end
   }
-  
+  puts @html_doc
   # @xml_doc.write_to(output_filename)
 end
 

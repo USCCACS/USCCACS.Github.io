@@ -3,6 +3,7 @@
 		<publication>
 			<title>Henry</title>
 			<author>Ford</author>
+			<publisher>Le Mans</publisher>
 			<rating>8</rating>
 			<volume>4</volume>
 			<year>2020</year>
@@ -11,6 +12,7 @@
 		<publication>
 			<title>scooter</title>
 			<author>Bajaj</author>
+			<publisher>Monza</publisher>
 			<rating>8</rating>
 			<volume>4</volume>
 			<year>2020</year>
