@@ -5,7 +5,7 @@ DATA_FILENAME = "publication_details.xml"
 OUTPUT_FILENAME = "test_page.html"
 @required_fields = ['title', 'author', 'rating', 'volume', 'year']
 
-def find_data_file(data_files)
+def ensure_data_files(data_files)
   unless (data_files.map { |f| File.exist?(f) }.include? false)
     puts "Files exist. We will now begin processing for valid contents."
   else
@@ -41,21 +41,15 @@ end
 
 def read_data_and_prepend(data_filename, output_filename)
   # pre-check for existing input and output files
-  find_data_file([data_filename, output_filename])
+  ensure_data_files([data_filename, output_filename])
   
-  puts "Checking for valid entries"
   xml_doc = File.open(data_filename) { |f| Nokogiri::XML(f) }
   
   # check if any all valid publication details are provided
   publications = xml_doc.css('publications publication')
   valid_nodes = identify_valid_nodes(publications)
   p valid_nodes
-  # puts publications
-  # sitcom1 = xml_doc.css('sitcom')
-  # puts "this is the first sitcom"+sitcom1[0].to_xml
-  # sitcoms = xml_doc.css('sitcoms')
-  # sitcom1.each {|b| puts b.to_xml }
-  # puts xml_doc.to_XML
+
 end
 
 read_data_and_prepend(DATA_FILENAME, OUTPUT_FILENAME)
