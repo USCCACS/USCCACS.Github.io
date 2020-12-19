@@ -1,9 +1,11 @@
 <root>
 	<publications>
-		<title> </title>
-		<author> </author>
-		<rating> </rating>
-		<volume></volume>
-		<year></year>			
+		<publication>
+			<title></title>
+			<author></author>
+			<rating></rating>
+			<volume></volume>
+			<year></year>			
+		</publication>
 	</publications>
 </root>
