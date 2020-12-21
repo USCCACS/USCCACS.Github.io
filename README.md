@@ -18,7 +18,7 @@ A github page and script for generating and maintaining the publications page fo
 			<rating>8</rating>
 			<volume>4</volume>
 			<year>2020</year>
-			<link>http://cacs.usc.edu/papers/Tiwari-PhotoAmorphizationSb2Te3-JPCL20.pdf</link>			
+			<link>papers/Tiwari-PhotoAmorphizationSb2Te3-JPCL20.pdf</link>			
 		</publication>
 		...
 		...
