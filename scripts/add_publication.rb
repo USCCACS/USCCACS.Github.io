@@ -31,8 +31,8 @@ def identify_valid_nodes(publications)
     end  
     
     # warn the user in the case of in-complete fill-up of details
-    if (empty_child.include?(true) and empty_child.include?(true))
-      abort ("Some fields were found to incomplete")
+    if (empty_child.include?(true) and empty_child.include?(false))
+      abort ("Some fields were found to be incomplete")
     end
   end
   valid_nodes
