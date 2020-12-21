@@ -28,7 +28,7 @@ jobs:
       with:
         ruby-version: 2.6
     - name: Install dependencies
-      run: bundle install
+      run: bundle install --gemfile scripts/Gemfile
     - name: Add publication to page
       run: ruby scripts/add_publication.rb
     - name: Commit modified .html and .xml files
