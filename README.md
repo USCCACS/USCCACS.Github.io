@@ -26,4 +26,4 @@ A github page and script for generating and maintaining the publications page fo
 </root>
 ```
 
-> Only one `root` and `publications` tab. However any number of `publications` tag be be present in the publication_details.xml file
+> Only one `root` and `publications` tag. However any number of `publications` tag be be present in the publication_details.xml file
