@@ -1,31 +1,32 @@
+<?xml version="1.0"?>
 <root>
 	<publications>
 		<publication>
-			<title>Henry</title>
-			<author>Ford</author>
-			<publisher>Le Mans</publisher>
-			<rating>8</rating>
-			<volume>4</volume>
-			<year>2020</year>
-			<link>http://cacs.usc.edu/papers/Tiwari-PhotoAmorphizationSb2Te3-JPCL20.pdf</link>			
+			<title> </title>
+			<author> </author>
+			<publisher> </publisher>
+			<rating> </rating>
+			<volume> </volume>
+			<year> </year>
+			<link> </link>			
 		</publication>
 		<publication>
-			<title>scooter</title>
-			<author>Bajaj</author>
-			<publisher>Monza</publisher>
-			<rating>8</rating>
-			<volume>4</volume>
-			<year>2022</year>
-			<link>http://cacs.usc.edu/papers/Tiwari-PhotoAmorphizationSb2Te3-JPCL20.pdf</link>			
+			<title> </title>
+			<author> </author>
+			<publisher> </publisher>
+			<rating> </rating>
+			<volume> </volume>
+			<year> </year>
+			<link> </link>			
 		</publication>
 		<publication>
-			<title>Jeep</title>
-			<author>mahindra</author>
-			<publisher>Spa</publisher>
-			<rating>8</rating>
-			<volume>4</volume>
-			<year>2021</year>
-			<link>http://cacs.usc.edu/papers/Tiwari-PhotoAmorphizationSb2Te3-JPCL20.pdf</link>			
+			<title> </title>
+			<author> </author>
+			<publisher> </publisher>
+			<rating> </rating>
+			<volume> </volume>
+			<year> </year>
+			<link> </link>			
 		</publication>
 	</publications>
 </root>
