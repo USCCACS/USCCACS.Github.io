@@ -1,2 +1,2 @@
-# CACSPublications
-A github page for maintaing the publications page for CACS
+# CACS Publications Page
+A github page and script for generating and maintaining the publications page for CACS

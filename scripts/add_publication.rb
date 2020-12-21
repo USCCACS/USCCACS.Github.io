@@ -1,7 +1,7 @@
 require 'nokogiri'
 
 DATA_FILENAME = "publication_details.xml"
-OUTPUT_FILENAME = "test_page.html"
+OUTPUT_FILENAME = "index.html"
 @required_fields = ['title', 'author', 'publisher', 'rating', 'volume', 'year', 'link']
 
 def ensure_data_files(data_files)
@@ -20,7 +20,8 @@ def identify_valid_nodes(publications)
     empty_child = []
     
     @required_fields.each do |field|
-      empty_child << publication.at_css(field).content.empty?
+      field_content = publication.at_css(field).content
+      empty_child << (field.empty? || field == " ")
     end
     
     unless empty_child.include?(true)
@@ -35,6 +36,25 @@ def identify_valid_nodes(publications)
     end
   end
   valid_nodes
+end
+
+def get_year_node(all_years, target_year)
+  year_node = []
+  
+  # find the smallest year, close to target year and add previous sibling
+  located_year = all_years.select {|year| year.content <= target_year }
+  
+  if (located_year.empty?)      
+    year_node = all_years.last.add_next_sibling "<h2>#{target_year}</h2>"
+  else
+    if (located_year.first.content == target_year)
+      year_node << located_year.first
+    else
+      year_node = located_year.first.add_previous_sibling "<h2>#{target_year}</h2>"
+    end    
+  end
+  
+  year_node
 end
 
 def prepend_to_html(publication, output_filename)
@@ -53,26 +73,17 @@ def prepend_to_html(publication, output_filename)
     }
   end
   
-  all_dates = @html_doc.css('div ol h2')
-  # puts all_dates
-  date = all_dates.select {|d| d.content==publication.at_css('year').content }
-  if !(date.empty?) then puts "year exists" 
-  else 
-    puts "year must be added"
-    
+  all_years = @html_doc.css('div ol h2')
+  # puts all_years
+  year = get_year_node(all_years, publication.at_css('year').content)  
+  
+  year[0].add_next_sibling entry_builder.to_html
+  
+  # set the content of transfered data to empty  
+  @required_fields.each do |field|
+    publication.at_css(field).content = " "
   end
-  # p date
-  date_value = date.first.add_next_sibling entry_builder.to_html
-  # puts @html_doc
-  # @required_fields.each do |field|
-#     puts publication.at_css(field).content
-#
-#     # set the content of transfered data to empty
-#   end
 
-#  publication.css('year').each {|p| p.add_child '<extra>head</extra>'}
-#  puts publication
- # puts @xml_doc
 end
 
 def read_data_and_prepend(data_filename, output_filename)
@@ -85,12 +96,14 @@ def read_data_and_prepend(data_filename, output_filename)
   # check if any all valid publication details are provided
   publications = @xml_doc.css('publications publication')
   valid_nodes = identify_valid_nodes(publications)
-  p valid_nodes
+  # p valid_nodes
   publications.zip(valid_nodes).each_entry { |pub, valid| 
     if (valid) then prepend_to_html(pub, output_filename) end
   }
-  puts @html_doc
-  # @xml_doc.write_to(output_filename)
+  # puts @html_doc
+#   puts @xml_doc
+  File.write(output_filename, @html_doc.to_html)
+  File.write(data_filename, @xml_doc.to_xml)
 end
 
 read_data_and_prepend(DATA_FILENAME, OUTPUT_FILENAME)
