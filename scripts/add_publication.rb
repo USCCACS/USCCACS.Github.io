@@ -21,7 +21,7 @@ def identify_valid_nodes(publications)
     
     @required_fields.each do |field|
       field_content = publication.at_css(field).content
-      empty_child << (field.empty? || field == " ")
+      empty_child << (field_content.empty? || field_content == " ")
     end
     
     unless empty_child.include?(true)
