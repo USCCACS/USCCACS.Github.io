@@ -45,7 +45,7 @@ def get_year_node(all_years, target_year)
   located_year = all_years.select {|year| year.content <= target_year }
   
   if (located_year.empty?)      
-    year_node = @html_doc.css('div ol') << "<h2>#{target_year}</h2>"
+    year_node = @html_doc.css('div ol')[0].add_child "<h2>#{target_year}</h2>"
   else
     if (located_year.first.content == target_year)
       year_node << located_year.first
