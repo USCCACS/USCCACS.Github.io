@@ -4,7 +4,7 @@ A github page and script for generating and maintaining the publications page fo
 ## How to add a new publication to the page 
 + Add the document to the `papers/` folder
 + Fill out the publications details in the `publication_details.xml` file
-+ Make a commit to master
++ Push changes
 
 ## Schema of xml used 
 
