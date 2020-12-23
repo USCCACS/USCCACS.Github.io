@@ -1,7 +1,7 @@
 require 'nokogiri'
 
 DATA_FILENAME = "publication_details.xml"
-OUTPUT_FILENAME = "wp_index.html"
+OUTPUT_FILENAME = "index.html"
 @required_fields = ['title', 'author', 'publisher', 'rating', 'volume', 'year', 'link']
 
 def ensure_data_files(data_files)
