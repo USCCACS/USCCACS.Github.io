@@ -67,9 +67,9 @@ def prepend_to_html(publication, output_filename)
       html.text publication.at_css(@required_fields[1]).content
       html.br
       html.i publication.at_css(@required_fields[2]).content
-      html.b publication.at_css(@required_fields[3]).content
-      html.b ","+publication.at_css(@required_fields[4]).content
-      html.text "("+publication.at_css(@required_fields[5]).content+")"
+      html.b " "+publication.at_css(@required_fields[3]).content
+      html.text ", "+publication.at_css(@required_fields[4]).content
+      html.text " ("+publication.at_css(@required_fields[5]).content+")"
     }
   end
   
