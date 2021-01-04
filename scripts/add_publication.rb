@@ -81,7 +81,7 @@ def prepend_to_html(publication, output_filename)
   
   # set the content of transfered data to empty  
   @required_fields.each do |field|
-    publication.at_css(field).content = " "
+    publication.at_css(field).content = ""
   end
 
 end
