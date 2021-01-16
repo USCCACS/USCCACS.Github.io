@@ -2,31 +2,31 @@
 <root>
 	<publications>
 		<publication>
-			<title>Carrier-specific dynamics in 2H-MoTe2 observed by femtosecond soft X-ray absorption spectroscopy using an X-ray free-electron laser</title>
-			<author>A. Britz, A. R. Attar, X. Zhang, H.-T. Chang, C. Nyby, A. Krishnamoorthy, S. H. Park, S. Kwon, M. Kim, D. Nordlund, S. Sainio, T. F. Heinz, S. R. Leone, A. M. Lindenberg, A. Nakano, P. Ajayan, P. Vashishta, D. Fritz, M.-F. Lin, and U. Bergmann</author>
-			<publisher>Structural Dynamics</publisher>
-			<rating>8</rating>
-			<volume>014501:1-10</volume>
-			<year>2021</year>
-			<link>papers/Attar-MoTe2-SDy21.pdf</link>			
+			<title> </title>
+			<author> </author>
+			<publisher> </publisher>
+			<rating> </rating>
+			<volume> </volume>
+			<year> </year>
+			<link> </link>			
 		</publication>
 		<publication>
-			<title></title>
-			<author></author>
-			<publisher></publisher>
-			<rating></rating>
-			<volume></volume>
-			<year></year>
-			<link></link>			
+			<title/>
+			<author/>
+			<publisher/>
+			<rating/>
+			<volume/>
+			<year/>
+			<link/>			
 		</publication>
 		<publication>
-			<title></title>
-			<author></author>
-			<publisher></publisher>
-			<rating></rating>
-			<volume></volume>
-			<year></year>
-			<link></link>			
+			<title/>
+			<author/>
+			<publisher/>
+			<rating/>
+			<volume/>
+			<year/>
+			<link/>			
 		</publication>
 	</publications>
 </root>
