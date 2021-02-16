@@ -2,13 +2,15 @@
 <root>
 	<publications>
 		<publication>			
-			<title> </title>
-			<author> </author>
-			<publisher> </publisher>
-			<rating> </rating>
-			<volume> </volume>
-			<year> </year>
-			<link> </link>			
+			<title> Lattice thermal transport in two-dimensional alloys and fractal heterostructures
+
+</title>
+			<author>A. Krishnamoorthy, N. Baradwaj, A. Nakano, R. K. Kalia, and P. Vashishta</author>
+			<publisher>Scientific Reports</publisher>
+			<rating>11</rating>
+			<volume>1656:1-8</volume>
+			<year>2021</year>
+			<link>papers/Krishnamoorthy-ThermalMoWSe2-SRep21.pdf</link>			
 		</publication>
 		<publication>
 			<title/>
