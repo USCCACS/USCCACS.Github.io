@@ -2,13 +2,13 @@
 <root>
 	<publications>
 		<publication>			
-			<title> </title>
-			<author> </author>
-			<publisher> </publisher>
-			<rating> </rating>
-			<volume> </volume>
-			<year> </year>
-			<link> </link>			
+			<title>https://github.com/USCCACS/USCCACS.Github.io</title>
+			<author>C. Powers, L. Bassman, T. M. Linker, K. Nomura, S. Gulania, R. K. Kalia, A. Nakano, and P. Vashishta</author>
+			<publisher>SoftwareX</publisher>
+			<rating>14</rating>
+			<volume>100696: 1-6</volume>
+			<year>2021</year>
+			<link>papers/Powers-MISTIQS-SWX21.pdf</link>			
 		</publication>
 		<publication>
 			<title/>
