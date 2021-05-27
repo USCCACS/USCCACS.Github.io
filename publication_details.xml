@@ -2,13 +2,13 @@
 <root>
 	<publications>
 		<publication>			
-			<title> </title>
-			<author> </author>
-			<publisher> </publisher>
-			<rating> </rating>
-			<volume> </volume>
-			<year> </year>
-			<link> </link>			
+			<title>Dielectric constant of liquid water using neural network <i>ab initio</i> molecular dynamics</title>
+			<author>A. Krishnamoorthy, K. Nomura, N. Baradwaj, K. Shimamura, P. Rajak, A. Mishra, S. Fukushima, F. Shimojo, R. K. Kalia, A. Nakano, and P. Vashishta</author>
+			<publisher>Physical Review Letters</publisher>
+			<rating>126</rating>
+			<volume>216403:1-7</volume>
+			<year>2021</year>
+			<link>papers/Krishnamoorthy-DielectricWaterNNQMD-PRL21.pdf</link>			
 		</publication>
 		<publication>
 			<title/>
