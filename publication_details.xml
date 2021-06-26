@@ -2,13 +2,13 @@
 <root>
 	<publications>
 		<publication>			
-			<title> </title>
-			<author> </author>
-			<publisher> </publisher>
-			<rating> </rating>
-			<volume> </volume>
-			<year> </year>
-			<link> </link>			
+			<title>Neural network quantum molecular dynamics, intermediate range order in GeSe2, and neutron scattering experiments</title>
+			<author>P. Rajak, N. Baradwaj, K. Nomura, A. Krishnamoorthy, J. P. Rino, K. Shimamura, S. Fukushima, F. Shimojo, R. K. Kalia, A. Nakano, and P. Vashishta</author>
+			<publisher>Journal of Physical Chemistry Letters</publisher>
+			<rating>12</rating>
+			<volume>6020-6028</volume>
+			<year>2021</year>
+			<link>papers/Rajak-NNQMD-GeSe2-JPCL21.pdf</link>			
 		</publication>
 		<publication>
 			<title/>
