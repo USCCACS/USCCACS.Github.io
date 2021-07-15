@@ -2,13 +2,13 @@
 <root>
 	<publications>
 		<publication>			
-			<title> </title>
-			<author> </author>
-			<publisher> </publisher>
-			<rating> </rating>
-			<volume> </volume>
-			<year> </year>
-			<link> </link>			
+			<title>Autonomous reinforcement learning agent for chemical vapor deposition synthesis of quantum materials</title>
+			<author>P. Rajak, A. Krishnamoorthy, A. Mishra, R. K. Kalia, A. Nakano and P. Vashishta</author>
+			<publisher>npj Computational Materials</publisher>
+			<rating>7</rating>
+			<volume>108: 1-9</volume>
+			<year>2021</year>
+			<link>papers/Rajak-RVCVD-npjCM21.pdf</link>			
 		</publication>
 		<publication>
 			<title/>
