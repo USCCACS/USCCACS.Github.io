@@ -3,7 +3,7 @@ A github page and script for generating and maintaining the publications page fo
 
 ## How to add a new publication to the page 
 + Congratulations on your recently accepted paper! If you are reading this then then you must be looking for how to update the cacs [publication page](https://usccacs.github.io/) to include your work
-+ Begin the process of uploading the document in pdf format to the `papers/` directory of this repo. Visit the directory through this [link](https://usccacs.github.io/) and click on the the add files button on the top right to upload files. Files can be uploaded by selecting them from your folder or by click and drop
++ Begin the process of uploading the document in pdf format to the `papers/` directory of this repo. Visit the directory through this [link](https://usccacs.github.io/) and click on the the add files button on the top right to upload files. Files can be uploaded by selecting them from your folder or by drag and drop
 + After adding your files click on the commit changes button
 + Once the files are uploaded you must specify the exact words that will be used to diplay the publication on the [page](https://usccacs.github.io/)
 + Open the `publication_details.xml` file and edit the file from your browser
