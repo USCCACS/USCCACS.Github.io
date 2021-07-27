@@ -7,7 +7,7 @@ A github page and script for generating and maintaining the publications page fo
 + After adding your files click on the commit changes button
 + Once the files are uploaded you must specify the exact words that will be used to diplay the publication on the [page](https://usccacs.github.io/)
 + Open the `publication_details.xml` [file](https://github.com/USCCACS/USCCACS.Github.io/blob/main/publication_details.xml) and edit the file from your browser
-+ Each `publication` tag can be used for adding updating the display text for an uploaded paper
++ Modify the `publication` tag for adding the display text for each uploaded paper
 + The `title` tag is where you fill out the title of the work
 + The `author` tag is where you fill out all the author names
 + The `publisher` tag is where you fill out the name of the journal
