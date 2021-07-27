@@ -14,7 +14,7 @@ A github page and script for generating and maintaining the publications page fo
 + The `rating` tag is where you fill out the pages or sequence in which your work has appeared
 + The `volume` is the issue number / volume in which your work has appeared
 + The `year`is where you fill out the year the work first appeared in publication
-+ And now the `link`, pay close attention here since this is slightly tricky. Open the [papers directory](https://github.com/USCCACS/USCCACS.Github.io/tree/main/papers) in the repo and locate the most recent paper that you uploaded. Click on it to verify that the PDF can be viewed. Close to the branch name at the top you will find the file name as ` USCCACS.Github.io/papers/file-name.pdf `. Copy the filename starting from from `papers/...`. Pate this into the `link` tag (see the example below for clarity)
++ And now the `link`, pay close attention here since this is slightly tricky. Open the [papers directory](https://github.com/USCCACS/USCCACS.Github.io/tree/main/papers) in the repo and locate the most recent paper that you uploaded. Verify the PDF can be viewed by clicking on it. Near the branch name at the top, you will notice the file name as ` USCCACS.Github.io/papers/file-name.pdf `. Copy the filename starting from from `papers/...`. Paste this into the `link` tag (see the example below for more clarity)
 + Click on commit changes and wait for the generator script to build the updated index page and go online.
 
 ## Schema of xml used 
