@@ -2,13 +2,13 @@
 <root>
 	<publications>
 		<publication>			
-			<title> </title>
-			<author> </author>
-			<publisher> </publisher>
-			<rating> </rating>
-			<volume> </volume>
-			<year> </year>
-			<link> </link>			
+			<title>Thickness dependence of dielectric constant of alumina films based on first-principles calculations</title>
+			<author>S. Fukushima, R. K. Kalia, A. Nakano, F. Shimojo, and P. Vashishta</author>
+			<publisher>Applied Physics Letters</publisher>
+			<rating>121</rating>
+			<volume>062902: 1-5</volume>
+			<year>2022</year>
+			<link>papers/Fukushima-DielectricAl2O3-APL22.pdf</link>			
 		</publication>
 		<publication>
 			<title/>
