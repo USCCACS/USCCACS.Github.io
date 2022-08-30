@@ -2,13 +2,13 @@
 <root>
 	<publications>
 		<publication>			
-			<title> </title>
-			<author> </author>
-			<publisher> </publisher>
-			<rating> </rating>
-			<volume> </volume>
-			<year> </year>
-			<link> </link>			
+			<title>Towards computational polar-topotronics: multiscale neural-network quantum molecular dynamics simulations of polar vortex states in SrTiO3/PbTiO3 nanowires</title>
+			<author>T. Linker, S. Fukshima, R. K. Kalia, A. Krishnamoorthy, A. Nakano, K. Nomura, K. Shimamura, F. Shimojo, and P. Vashishta</author>
+			<publisher>Frontiers in Nanotechnology</publisher>
+			<rating>4</rating>
+			<volume>884149: 1-7</volume>
+			<year>2022</year>
+			<link>papers/Linker-PolarTopotronics-FrontNano22.pdf</link>			
 		</publication>
 		<publication>
 			<title/>
