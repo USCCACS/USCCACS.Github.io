@@ -2,13 +2,13 @@
 <root>
 	<publications>
 		<publication>			
-			<title> </title>
-			<author> </author>
-			<publisher> </publisher>
-			<rating> </rating>
-			<volume> </volume>
-			<year> </year>
-			<link> </link>			
+			<title>Allegro-Legato: Scalable, Fast, and Robust Neural-Network Quantum Molecular Dynamics via Sharpness-Aware Minimization</title>
+			<author>H. Ibayashi, T. M. Razakh, L. Yang, T. Linker, M. Olguin, S. Hattori, Y. Luo, R. K. Kalia, A. Nakano, K. Nomura, P. Vashishta</author>
+			<publisher>ISC High Performance, LNCS</publisher>
+			<rating>13948</rating>
+			<volume>223-239</volume>
+			<year>2023</year>
+			<link>papers/Ibayashi-Allegro-Legato-ISC23.pdf</link>			
 		</publication>
 		<publication>
 			<title/>
