@@ -2,13 +2,14 @@
 <root>
 	<publications>
 		<publication>			
-			<title> </title>
-			<author> </author>
-			<publisher> </publisher>
-			<rating> </rating>
-			<volume> </volume>
-			<year> </year>
-			<link> </link>			
+			<title>Computational framework for polymer synthesis to study dielectric properties using polarizable reactive molecular dynamics</title>
+			<author>A.Mishra, L. Chen, Z. Li, K. Nomura, A. Krishnamoorthy, S. Fukushima, S. C. Tiwari, R. K. Kalia, A. Nakano, R. Ramprasad, G. Sotzing, Y. Cao, P. Vashishta
+</author>
+			<publisher>Computational Materials Science</publisher>
+			<rating>228</rating>
+			<volume>112340</volume>
+			<year>2023</year>
+			<link>papers/Mishra-ReaxPQ+-CMS23.pdf</link>			
 		</publication>
 		<publication>
 			<title/>
