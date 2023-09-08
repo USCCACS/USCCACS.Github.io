@@ -23,11 +23,11 @@ h6 {
 }
 
 a {
-    color: $gray-900;
+    color: $hyperlink-accent-2;
 
     &:focus,
     &:hover {
-        color: $primary;
+        color: $hyperlink-accent-3;
     }
 }
 
