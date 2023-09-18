@@ -2,13 +2,13 @@
 <root>
 	<publications>
 		<publication>			
-			<title> </title>
-			<author> </author>
-			<publisher> </publisher>
-			<rating> </rating>
-			<volume> </volume>
-			<year> </year>
-			<link> </link>			
+			<title>Induction and ferroelectric switching of flux closure domains in strained PbTiO3 with neural network quantum molecular dynamics</title>
+			<author>T. Linker, K. Nomura, S. Fukushima, R. K. Kalia, A. Krishnamoorthy, A. Nakano, K. Shimamura, F. Shimojo, and P. Vashishta</author>
+			<publisher>Nano Letters</publisher>
+			<rating>23</rating>
+			<volume>7456-7462volume>
+			<year>2023</year>
+			<link>papers/Linker-NNQMDBEC-NanoLett23.pdf</link>			
 		</publication>
 		<publication>
 			<title/>
