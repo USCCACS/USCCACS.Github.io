@@ -2,13 +2,13 @@
 <root>
 	<publications>
 		<publication>			
-			<title> </title>
-			<author> </author>
-			<publisher> </publisher>
-			<rating> </rating>
-			<volume> </volume>
-			<year> </year>
-			<link> </link>
+			<title>Molecular autonomous pathfinder using deep reinforcement learning</title>
+			<author>K. Nomura, A. Mishra, T. Sang, R. K. Kalia, A. Nakano, and P. Vashishta</author>
+			<publisher>Journal of Physical Chemistry Letters</publisher>
+			<rating>15</rating>
+			<volume>5288-5294</volume>
+			<year>2024</year>
+			<link>papers/Nomura-MAP-JPCL24.pdf</link>
 		<publication>
 			<title/>
 			<author/>
