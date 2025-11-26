@@ -2,13 +2,13 @@
 <root>
 	<publications>
 		<publication>			
-			<title> </title>
-			<author> </author>
-			<publisher> </publisher>
-			<rating> </rating>
-			<volume> </volume>
-			<year> </year>
-			<link> </link>
+			<title>Multiscale light-matter dynamics in quantum materials: from electrons to topological superlattices (ACM Gordon Bell Prize finalist)</title>
+			<author>T. M. Razakh, T. Linker, Y. Luo, N. Piroozan, J. Pennycook, N. Kumar, A. Musaelian, A. Johansson, B. Kozinsky, R. K. Kalia, P. Vashishta, F. Shimojo, S. Hattori, K. Nomura, and A. Nakano</author>
+			<publisher>Proceedings of Supercomputing</publisher>
+			<rating>SC25</rating>
+			<volume>pp. 36-45</volume>
+			<year>2025</year>
+			<link>papers/Razakh-MLMD-SC25.pdf</link>
 		<publication>
 			<title/>
 			<author/>
