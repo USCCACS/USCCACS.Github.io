@@ -2,13 +2,13 @@
 <root>
 	<publications>
 		<publication>			
-			<title> </title>
-			<author> </author>
-			<publisher> </publisher>
-			<rating> </rating>
-			<volume> </volume>
-			<year> </year>
-			<link> </link>
+			<title>Supercritical water at ten densities from 0.1 to 1.0 gr/cc at 1000 K using ab initio molecular dynamics simulations</title>
+			<author>N. Baradwaj, K. Nomura, A. Nakano, R. K. Kalia, and P. Vashishta</author>
+			<publisher>Journal of Chemical Physics</publisher>
+			<rating>164</rating>
+			<volume>024501: 1-15</volume>
+			<year>2026</year>
+			<link>papers/Baradwaj-SupercriticalWater-JCP26.pdf</link>
 		<publication>
 			<title/>
 			<author/>
